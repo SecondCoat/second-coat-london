@@ -1,4 +1,4 @@
-# The Getaway Remaster
+# Second Coat: London
 
 A new, free engine for **The Getaway** (PlayStation 2, 2002), by
 [SecondCoat](https://secondcoat.dev). It plays the original from a disc image
