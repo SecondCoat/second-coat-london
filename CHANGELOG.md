@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.2
+
+### Changed
+- Eye adaptation is now Full by default. Under the High lighting, shaded
+  streets and the cars in them look the way your eye would see them in the
+  street, where before they were nearly black.
+- Car glass is now High by default and part of the Effects preset (Effects >
+  Cars): car windows break like real glass. The ORIGINAL preset keeps the
+  PS2's glass.
+
+### Fixed
+- A "device lost" crash on NVIDIA cards the first time a car hit a wall.
+- Under the High lighting, shaded streets were far too dark and the cars in
+  them looked black under their reflections.
+- Under the High lighting, the sides of a car (Mark's car's doors, for
+  example) could turn black.
+
 ## 0.1.1
 
 ### New
