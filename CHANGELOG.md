@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.1.3
+
+### New
+- A Contrast setting beside Brightness (Options > Display > Picture), and a
+  Brightness & contrast page that shows both as sliders over a clean picture.
+  From the main menu you set them on a live London street, with the traffic
+  and pedestrians passing by; from the pause menu, on the paused game.
+
+### Fixed
+- The prison van mission (Mark's chapter 4) never ended: the van could not
+  be rammed to a stop. The same goes for the later convoy mission that works
+  the same way.
+- Mission cars that stand waiting, such as the convoy before it leaves,
+  were empty; their drivers now sit in them until they get out.
+- Police cars could drive into Hammond's museum through its doors and down
+  its stairs.
+- Looking sideways across the park beside the road in Kensington, the
+  ground could vanish, leaving the trees standing over the sky.
+
+### Performance
+- Indoors, such as in Hammond's museum, the trees outside no longer cost
+  GPU time: up to 10 ms a frame less. Outdoors, trees hidden behind
+  buildings are cheaper too.
+
 ## 0.1.2
 
 ### Changed
