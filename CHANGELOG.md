@@ -9,6 +9,9 @@
   and pedestrians passing by; from the pause menu, on the paused game.
 
 ### Fixed
+- With eye adaptation on Full (the default), a strip of sky over a shaded
+  street burned white; the street now keeps its shades and the sky its
+  colour.
 - The prison van mission (Mark's chapter 4) never ended: the van could not
   be rammed to a stop. The same goes for the later convoy mission that works
   the same way.
