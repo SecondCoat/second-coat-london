@@ -1,5 +1,39 @@
 # Changelog
 
+## 0.1.4
+
+### New
+- On a Steam Deck, a phone or any touchscreen: ONLINE and CHEATS buttons at
+  the top right open the multiplayer and cheats windows with a tap, and a
+  text field brings up the on-screen keyboard (Steam's on a Steam Deck).
+
+### Multiplayer
+- Other players' cars and the traffic move smoothly: busy streets update
+  every tick, the cars steer and roll their wheels, keep turning through a
+  bend between updates and no longer jump when an update catches up.
+- A car you ram stays where you pushed it, for everyone.
+- The server checks every player's moves: no driving or running faster
+  than the game allows, and no passing through walls.
+- A hosted game plays the disc's London: world mods are left out while you
+  host and come back when the session ends. Joining a server whose world
+  differs from yours opens that world and joins again.
+- Cancelling a join while it connects goes back to playing offline.
+- 0.1.4 cannot play online with 0.1.3.
+
+### Fixed
+- Guns are held as in the original: long guns such as the shotgun and the
+  AK47 with both hands, and every gun aimed, drawn, holstered, carried in a
+  roll, in cover and around a corner with its own arm poses. Enemies too.
+- In Charlie's warehouse (mission 2), the stairwell could vanish into the
+  sky half way up, with the camera pressed against its wall.
+- In story missions only the police report a crime, as in the original:
+  in chapter 7 so many police cars and road blocks came after the van
+  that the missions could not be finished in time. In free roam passers-by
+  still call the police.
+- Road blocks go up as in the original: never on the sites only missions
+  use, the streets you just drove or while a getaway route runs, and only
+  when the traffic has room for their cars.
+
 ## 0.1.3
 
 ### New
