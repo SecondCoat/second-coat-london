@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.6
+
+### Fixed
+- Inside buildings the world could vanish around the camera, worse since
+  0.1.5: going up the stairs of the Soho restaurant, or aiming a gun on
+  them, the restaurant disappeared and only the city's far skyline showed
+  over an empty grey plane.
+
 ## 0.1.5
 
 ### Fixed
