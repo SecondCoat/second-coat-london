@@ -17,6 +17,10 @@
   and ragdolls near cars do less work, and the game finds pedestrians,
   enemies and traffic without searching through all of them.
 
+### Android
+- The app was renamed, so 0.1.5 installs beside 0.1.4 instead of updating
+  it: delete the old app and choose your disc image again.
+
 ## 0.1.4
 
 ### New
