@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.1.5
+
+### Fixed
+- The prison van mission (Mark's chapter 4) could still get stuck: the van
+  stood behind the convoy's burning police car and never drove off, and
+  the road blocks the mission lifts at the van stayed standing.
+- Ramming a car you chase from the side works as in the original: the hit
+  counts by how fast you close in across its flank, kicks the car aside,
+  breaks its tyres loose for a moment and rocks it. Only your car pins it,
+  no longer the traffic waiting at a light.
+
+### Performance
+- Less CPU time per frame on busy streets: pedestrians are posed in
+  parallel, the police look for you once per officer per frame, dents
+  and ragdolls near cars do less work, and the game finds pedestrians,
+  enemies and traffic without searching through all of them.
+
 ## 0.1.4
 
 ### New
