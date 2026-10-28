@@ -8,6 +8,10 @@
   them, the restaurant disappeared and only the city's far skyline showed
   over an empty grey plane.
 
+### Android
+- Mods go in `Android/data/dev.secondcoat.london/files/mods/` on the
+  phone's storage, where a file manager or a PC over USB can put them.
+
 ## 0.1.5
 
 ### Fixed
