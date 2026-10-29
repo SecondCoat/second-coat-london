@@ -1,5 +1,90 @@
 # Changelog
 
+## 0.1.7
+
+### New
+- The pause menu's MISSION BRIEFING, as in the original: during a story
+  mission it shows the current objective in the game's language, lets you
+  page back through the chapter's earlier ones (COMPLETE / ACTIVE) and
+  plays the spoken briefing.
+- A failed mission says why under "Mission failed", as the original does:
+  "YOU RAN OUT OF TIME!", "YOU LOST THE VAN!", "YASMIN WAS KILLED!".
+- A memory meter on every options tab, in both menus: the video memory in
+  use now, an estimate for the page's settings, what the selected setting
+  costs, and on the Mods tab what each mod takes. A new Texture memory
+  setting (Auto, or 1 to 12 GB) under Texture quality caps what the
+  textures may use.
+- A Frame rate cap (Off, Below refresh for VRR screens, or 30 to 144 fps)
+  and Low latency (on by default), which starts each frame as late as it
+  can so your input is fresher.
+- Vehicle damage has two new steps below Original: Low and Medium, the
+  original's rules at a quarter and at half strength.
+
+### Changed
+- Smoother motion: with v-sync on, the game no longer drops to a fraction
+  of your screen's rate, the game's clock follows the display's own
+  timing, and ragdolls, knocked objects and the driving camera move
+  smoothly at any frame rate.
+- What the game would build the first time it is seen is built behind the
+  loading screen, and kept on disk for the next start: fewer stutters the
+  first time a car, an effect or a street comes into view.
+- Pedestrians on Tuned traffic (the default) walk somewhere: they follow
+  the pavements to a destination, cross at junctions and lights rather
+  than in the middle of a street, and keep to their side of the road.
+  They react in proportion: they step aside only for a car that is
+  actually heading at them, complain at one that nudges them, flee from
+  an attack they see close by, and raise their hands only at a gun aimed
+  at them. The Original setting keeps the PS2's behaviour.
+
+### Fixed
+- Retrying a failed mission starts it afresh, as the original does. Before,
+  the last attempt carried over:
+  - In chapter 7's van chase the van came back still smoking and failed
+    every retry at once.
+  - On mission 1's retry the police and the gangs were hostile again, and
+    traffic stayed five times thinner than it should, in later missions
+    too.
+  - Mission 2's warehouse kept the last attempt's broken props, and its
+    retry could undo what mission 1 had done.
+  - The street sounds and the engine of your car stayed silent.
+  - Bodies, skid marks, bullet marks and a burnt-out van stayed lying
+    around, and the player could walk back to the car he had been getting
+    into.
+- Passengers (your companion, pursuers' crews) poked through the car's
+  roof when it bounced over a kerb.
+- Reflections on car paint and glass shimmered around thin things such as
+  fire escapes.
+- In a cut-scene, a speaker seen in profile at the edge of the frame lost
+  the focus.
+- The Effects tab's titles in the options sat under the top bar.
+- Opening or redrawing the pause menu could freeze a frame for 90 ms on
+  wide screens.
+
+### Performance
+- Fewer stutters while playing: textures, car and pedestrian models,
+  lighting and ray tracing data are uploaded a little per frame instead
+  of all at once, the sun's shadows refresh one layer per frame, the log
+  is written on its own thread, and traffic and pedestrians do their
+  checks only against what is near them.
+
+### Multiplayer
+- A server browser: public servers are listed, and you join without
+  forwarding a port, through your router. Public hosting is off by
+  default; the host page warns that players who join see the host's IP
+  address. It needs Multiplayer 1.1.0 from the mods page.
+
+### Mods
+- Mod API 0.63 to 0.66: scripts can read the player's health, guns, the
+  police's heat, the car and the story, and hear events for them; draw a
+  HUD of their own (hiding the game's, with their own fonts); build a
+  weapon wheel with slow motion; manage an inventory; draw their own
+  widgets in their own style; and use other mods as libraries.
+- Seasons for the world: mods can set the day of the year for the sun,
+  turn and drop the generated trees' leaves, colour the grass and pile
+  leaves on the ground. The new Seasons mod on the mods page runs a
+  London year in two hours, with rain and winter snow. Driving in snow is
+  easier.
+
 ## 0.1.6
 
 ### Fixed
