@@ -79,6 +79,11 @@
   server's world. It asks once per server, and again when its mods change.
 - Car tuning, decals and neon, stunt tracks and the sky race work online,
   through the server's mods.
+- The official server runs the character creator, the tuning garage and
+  the sky race: on your first join you make your character, and the
+  server keeps your look and your car under your name. Nothing to
+  install: the server hands you what it needs, and a mod you already have
+  at the server's version is used as it is.
 - A carjacked driver gets out for everyone, not just for you.
 - The player name starts empty and must be filled in before you join or
   host.
