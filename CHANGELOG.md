@@ -87,7 +87,7 @@
 - A carjacked driver gets out for everyone, not just for you.
 - The player name starts empty and must be filled in before you join or
   host.
-- It needs Multiplayer 1.2.1 from the mods page.
+- It needs Multiplayer 1.2.2 from the mods page.
 
 ### Mods
 - Mod API 0.67 to 0.77: a server's mods offered to its players; paint and
