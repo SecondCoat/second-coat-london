@@ -1,5 +1,111 @@
 # Changelog
 
+## 0.1.8
+
+### New
+- Volumetric clouds under the High lighting: a deck of real cumulus that
+  drifts with the sky's own cloud layers, gathers a minute before rain and
+  clears over the two minutes after it. A Clouds setting picks them, a
+  faster version of them or the flat layers.
+- A full moon in the High night sky, behind the clouds.
+- Rain, much wetter:
+  - Puddles form where a street holds water: in the gutters at the foot of
+    the kerbs, in dips, between the cobbles before over their tops. They
+    have a depth and a murky bottom, fill in a minute and a half and take
+    ten minutes to dry, after the rest of the street.
+  - Wet streets read as a sheen with highlights and glints, the grit of
+    the asphalt catching the light, and dry in patches: the sunlit side
+    and the crown first, gutters and shade last.
+  - Drops beat on the pools and the soaked street; wet materials darken
+    as they really do; facades facing the rain soak and streak.
+  - Water drips from awnings, balconies, eaves and cars; a heavy downpour
+    hangs a mist of splashes over the street and draws the fog in.
+  - Wet cars bead up and pick up the road's grime on their lower body.
+- Snow keeps the traffic's ruts far down the street, not just near you.
+- The hedges behind London's railings are real bushes, and keep the view
+  closed in every season.
+- Cars knock down police officers and mission characters on foot as they
+  do pedestrians: they get up again, or die from a hard enough hit.
+- The mouse pointer hides while you play with a gamepad.
+- The Mods tab shows each mod's version.
+
+### Changed
+- The High graphics preset grows its trees with lighter hedges (Generated
+  fast), for frame rate.
+- Characters and cars collide with the rooms and stairwells they walk and
+  drive through as the original does, room by room.
+
+### Fixed
+- The brothel mission (Frank):
+  - The street's facade no longer stands across the corridors and the hall.
+  - The back stair no longer stops you at its foot.
+  - On the ledges over the collapsed floor, turning the camera no longer
+    pulls you out of cover and fails the mission.
+  - The police no longer shoot the disarmed Jake: they arrest him, and the
+    mission completes.
+  - People in the street by the doorway are no longer lit by the light
+    inside.
+- The van chase to Snow Hill no longer fails ("YOU LOST THE VAN!") while
+  the van is still in sight, before you have rammed it.
+- The skips with planks are ramps again, as in the original: cars drive up
+  them and jump off.
+- Bodies slide off cars and can be driven over, instead of being pushed
+  along on the bonnet.
+- Cut-scenes: the inside of the van no longer crushes to black, and a
+  half-lit face no longer burns white.
+- Faces near a car at night no longer shine like metal, and a street full
+  of headlamps is no longer too dark.
+- The river's reflections lose their blocky dark outlines, and the
+  bridge's piers stop flickering in them.
+- The loading screen's texture count no longer disappears while textures
+  are still being converted.
+- A game that cannot start FSR 3.1 uses TAA instead of quitting.
+- A possible crash when a multiplayer game reopens the world.
+
+### Performance
+- Fewer stutters while playing: car models and paints load and upload in
+  the background and are shared between traffic and damage, a dent's new
+  body is built in parallel, blood on a car is cheaper, and the pause
+  menu opens at once.
+- The mods' shaders are compiled behind the loading screen and kept on
+  disk.
+- Dry streets under the High lighting draw with lighter shaders.
+- Two settings trade a little of the picture for speed: Clouds
+  "Volumetric fast" and Trees "Generated fast".
+
+### Multiplayer
+- A server can play its own mods: when you join a server with another
+  world (a car pack, say), the game offers to download it and opens the
+  server's world. It asks once per server, and again when its mods change.
+- Car tuning, decals and neon, stunt tracks and the sky race work online,
+  through the server's mods.
+- A carjacked driver gets out for everyone, not just for you.
+- The player name starts empty and must be filled in before you join or
+  host.
+- It needs Multiplayer 1.2.0 from the mods page.
+
+### Mods
+- Mod API 0.67 to 0.77: a server's mods offered to its players; paint and
+  tuning of the player's own car; decals and lights on cars and models; a
+  waypoint and a route by road; boost pads and stunt tracks a car drives
+  loops on; traffic lights as a mod's models; and one settings window for
+  every mod (F5).
+- New on the mods page:
+  - Tuning garage: at the wheel of your own car, stopped, press U to drive
+    into a workshop and change its model, paint, tuning, decals and neon.
+    In a car taken from the street, U makes it your car.
+  - Sky race: ten stunt courses in the sky, with jumps, loops and wall
+    rides. Press O anywhere outside a mission.
+  - London map view: M opens a map of the whole city to search, set a
+    waypoint, or jump onto a street.
+  - Car pack and Car pack 2002: modern cars, or only those on the road in
+    2002, in place of the game's and in traffic.
+  - UK traffic lights.
+- Minimap 1.2 draws the route to your destination; the minimap's, the day
+  cycle's and the seasons' settings moved to the F5 window (F11 is gone).
+- The character creator is redone: tabs, undo and redo, random looks, and
+  looks saved by name.
+
 ## 0.1.7
 
 ### New
