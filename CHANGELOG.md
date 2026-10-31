@@ -1,5 +1,57 @@
 # Changelog
 
+## 0.1.9
+
+### New
+- Gamepad rumble. The PS2's vibration is ported: crashes, kerbs,
+  misfires, fire, being hit, blasts, shots and a mission's end. A Rumble
+  setting (Options > Controls) picks the original's patterns, or Tuned
+  (the default): as strong as what happened and silent in the menus, with
+  a strength slider.
+- Button prompts for the pad you hold: Xbox, PlayStation, Steam Deck or
+  Switch. The Controls tab shows the pad's buttons, there is a Button
+  prompts setting, and Options > Controls > Controller layout shows the
+  whole pad.
+- In a police car, an ambulance or a fire engine, a tap of the horn turns
+  the roof lights and siren on and off; held, it is still the horn. With
+  the siren on, the police lose interest as they do in a pursuit. The
+  recovery truck only has its lights.
+- As in the original, the holster key throws a big gun away: it lands
+  behind you with the rounds in its magazine and can be picked up again
+  after a moment, but the spare ammunition is gone. The pistol stays
+  drawn. Not while you aim, fire, reload, pick something up or hold a
+  hostage.
+
+### Changed
+- Healing against a wall ends by itself at full health: you stand up off
+  the wall and do not lean again until you are hurt.
+- The game starts faster: the renderer's shaders are built side by side.
+
+### Fixed
+- The game no longer starts below the street when a mod has built
+  something under the start point.
+
+### Mods
+- Mods can place their own models in the world: buildings, interiors,
+  stairs and moving platforms that carry you along, with their own
+  collision and openings cut into the city's ground. Online the server
+  places them for everyone. Placements are written in `world/<name>.ron`
+  or from a script, and the placement editor (F9, F10 saves) places them
+  in the game.
+- Mods can play their own sounds and music (Ogg, MP3, FLAC, WAV), at a
+  fixed point or on the car, the player or a character, in 3D.
+- The Car radio mod: your own music as radio stations in the car, tuned
+  with the mouse wheel or the d-pad on a station wheel. Out of the car it
+  sounds muffled behind the doors.
+- London ground 0.7.0: the autumn leaves lie as a real layer on the
+  paving, and wheels and footsteps kick them up; a car's wake carries
+  them along. Falling leaves take their shapes.
+- Mod shortcuts can use the game's own actions.
+- Update Multiplayer to 1.2.3 and Cheats to 1.0.2 from the mods page.
+
+### Multiplayer
+- The protocol has changed: 0.1.9 and 0.1.8 cannot play together.
+
 ## 0.1.8
 
 ### New
