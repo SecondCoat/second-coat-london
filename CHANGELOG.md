@@ -105,7 +105,6 @@
     waypoint, or jump onto a street.
   - Car pack and Car pack 2002: modern cars, or only those on the road in
     2002, in place of the game's and in traffic.
-  - UK traffic lights.
 - Minimap 1.2 draws the route to your destination; the minimap's, the day
   cycle's and the seasons' settings moved to the F5 window (F11 is gone).
 - The character creator is redone: tabs, undo and redo, random looks, and
