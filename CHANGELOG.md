@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.1.10
+
+### Fixed
+- In Mark's chapter after the boiler-suit escape, the van is waiting
+  where the mission sends him again: it was placed far away before he got
+  there and was gone by the time he arrived. Continuing the story with
+  the Tuning garage mod also no longer swaps that van for your tuned car.
+- In the next mission, McCormack walks his route upstairs again instead
+  of standing in the corridor until Mark set off the triggers downstairs.
+- No more strips of snow on the floors indoors along the walls in a
+  winter fall.
+- A mod's panel without a set width no longer wraps its text one letter
+  a line: the Day cycle mod's clock went narrow at 11:50 and stayed so.
+
+### Changed
+- Fewer stutters while driving: the leaves and debris on the streets and
+  the puddles in the rain do their work off the main thread.
+
+### Mods
+- Update Tuning garage to 0.2.1 from the mods page.
+
 ## 0.1.9
 
 ### New
