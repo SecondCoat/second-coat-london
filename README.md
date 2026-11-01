@@ -26,7 +26,8 @@ Versions before 1.0 are test releases. Report bugs at
 ## Licence
 
 The builds are free to use and share, but the engine is not open source;
-its source code is not public. See [LICENSE](LICENSE).
+its source code is not public. See [LICENSE](LICENSE). The open-source code
+in the builds is listed, with its licences, in [third-party](third-party/).
 
 An unofficial fan project, not affiliated with or endorsed by Sony
 Interactive Entertainment or Team Soho. The Getaway is a trademark of Sony
