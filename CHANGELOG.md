@@ -1,5 +1,79 @@
 # Changelog
 
+## 0.2.0
+
+### New
+- The PS5. A jailbroken PS5 with native homebrew (etaHEN) runs the
+  remaster as the title "Second Coat: London" (PPSA99020): install it
+  under `/data/homebrew/` or through ProsperoStore and copy your disc image
+  to `/data/secondcoatlondon/game.iso` over FTP. A launcher in the style
+  of the console's home screen checks the disc, moves the PCSX2 HD pack
+  into place, prepares the textures, and turns mods on and off, updates
+  and installs them from the mods page. The first start is set for 40 to
+  50 fps (FSR 3.1 Performance, REMASTER MEDIUM effects with the ray
+  tracing kept), with PlayStation prompts. The DualSense's haptics carry
+  the rumble, its adaptive triggers follow the gun in your hand and the
+  car's pedals, the police radio plays from its speaker and the light bar
+  flashes in a pursuit. The touch pad's left half opens the cheats, its
+  right half multiplayer. Generated materials, London ground, the
+  MakeHuman characters, strand hair, the cheats and multiplayer ship with
+  it.
+- The cut-scenes' particles: cigar and cigarette smoke and the breath
+  they exhale, a lighter's spark and flame, the steam off a coffee, spat
+  blood and the cars' smoke, as the original plays them.
+- REMASTER MEDIUM effects: the remaster's effects with cheaper settings
+  for the costly ones (reflections, light shadows, indirect light and
+  clouds), between ORIGINAL and REMASTER HIGH. The graphics benchmark now
+  tunes the effects too, and steps them down before the resolution. It
+  aims at a frame rate you choose (30 to 165 fps, Options > Display >
+  Benchmark target), times the CPU beside the GPU and says when the CPU
+  sets the frame rate.
+- Playing in VR no longer needs a setting edited by hand: the Linux and
+  Windows packages carry `getaway-vr`, which starts the game in the
+  headset.
+
+### Changed
+- Strand hair looks more real: the hair shadows itself and the skin and
+  clothes under it, catches the lamps' and the sky's highlights, and
+  clumps and hangs heavier in the rain. It no longer flickers, shows
+  triangles or covers the ears, covers the whole head, and is lit as the
+  skin beside it (Susie's blonde no longer goes grey at night). Long hair
+  lies over the shoulders and down the back, slides off them and falls
+  with gravity, and trails the head's moves. The hair no longer bounces
+  at an uneven frame rate or lags a walking figure at a low one, and
+  under FSR 3.1 it is no longer speckled. A Strand hair quality setting
+  (LOW, MEDIUM, HIGH) sets how much of it you get.
+- Local lights and the indirect light are cheaper, with the same picture.
+- Fewer stutters at speed: London ground's cover and facades are placed
+  near the camera first, and the rain's puddles move with you more
+  cheaply.
+
+### Fixed
+- Wet ground with screen reflections off no longer mirrors the bright
+  sky under facades and roofs, where the puddles read as snow.
+- The game no longer stops with a fatal error when a multiplayer server's
+  world opens again.
+- Starts on more graphics cards: Intel's UHD 620 on Windows, and the
+  Adreno 650 and 740 phones (the 740 without the fire's volumes). Android
+  phones trace rays only when an option asks for it.
+- A car no longer shows itself in its own ray-traced reflections: in
+  the opening cut-scene the gang's car mirrored its beige cabin on its
+  bonnet and roof.
+- One failing pedestrian figure no longer leaves every figure after it
+  missing.
+
+### Mods
+- Mods can give strand hair flyaways, baby hairs at the hairline and
+  coiled locks (dreadlocks, braids).
+- London ground 0.8.0: the autumn leaves keep off the road's lanes, lie
+  in drifts drawn out along the wind, and turn from golden to russet in
+  the distance.
+- Strand hair 1.0.1: Susie's hair is fuller.
+- Update London ground and Strand hair from the mods page.
+- New on the mods page: Strand hair: Yasmin long, with Yasmin's hair let
+  down from her bun to the middle of her back, in the cut-scenes and in
+  the game. It loads after Strand hair.
+
 ## 0.1.10
 
 ### Fixed
