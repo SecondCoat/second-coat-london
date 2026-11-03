@@ -102,9 +102,8 @@ and the game exactly as they were.
   cost up to 19 ms a frame on a PS5). The pedestrians, the enemies'
   poses, the paths on foot, the collision lookups, the night's lights
   and the lit windows, the feet on the ground and the strand hair all do
-  less work or share it over the cores. Mods' placed interiors (the
-  Underground) no longer cost up to 14 % of the main thread in free
-  roam.
+  less work or share it over the cores. Mods' placed interiors no longer
+  cost up to 14 % of the main thread in free roam.
 - The graphics: the skin's light scattering runs only with a face near
   enough to show it, the city's plain walls lay their depth without a
   shader, and the rain's drops, the TAA, the motion blur, the shadows, the
