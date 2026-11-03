@@ -10,7 +10,7 @@
   "conceptId": "99020",
   "contentBadgeType": 1,
   "contentId": "IV0000-PPSA99020_00-SECONDCOATLONDON",
-  "contentVersion": "01.000.000",
+  "contentVersion": "01.003.000",
   "downloadDataSize": 256,
   "gameIntent": {
     "permittedIntents": [
@@ -35,5 +35,5 @@
   "sdkVersion": "0x0000000000000000",
   "titleId": "PPSA99020",
   "versionFileUri": "",
-  "getawayVersion": "0.2.0+3378106"
+  "getawayVersion": "0.3.0+c95b785"
 }
