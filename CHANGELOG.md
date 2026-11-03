@@ -1,5 +1,112 @@
 # Changelog
 
+## 0.3.0
+
+### New
+- Upscale the textures yourself: the mod manager's Tools > Upscale the
+  textures… makes the HD textures from your own disc on the graphics card
+  (4x-UltraSharpV2, the ground 4x-PBRify), the cars' paint, lamps and
+  cut-scene cars included, and the generated materials (DeepBump) with
+  them, into the HD textures and Generated materials mods. The networks
+  are downloaded once from our file host. On the PS5 the launcher's HD
+  textures page has Upscale from the disc. No PCSX2 pack needed (Linux,
+  Windows and the PS5).
+- A new mod manager: the mods in load order with their switches, the
+  ones that are off below, a search and filters (All, On, Off, Problems)
+  with why a mod does not load in its row, a page per mod with what it
+  needs and what needs it, and mods installed by dropping them on the
+  window.
+- Faces: the original characters' painted eyes shade as eyes (a round
+  iris with a limbal ring, the whites kept, no glint under the lids),
+  their lips have a wet sheen, and brows and lashes grow as strands with
+  the strand hair. Lip sync is smooth in the cut-scenes (Options >
+  Gameplay > Lip sync: ORIGINAL or SMOOTH). Face enhancements can be
+  turned off under Advanced Graphics > Characters, and are off in the
+  Original preset.
+- Saving in a mission: a save from the pause menu during a mission
+  resumes it where you saved, at a quiet moment (otherwise CAN'T SAVE NOW
+  and why). Retries still start the mission over.
+- Free roam is kept: where you were, your health and guns, and your car
+  wherever you left it, with its paint and damage. Free Roam offers
+  CONTINUE and RESTART when there is a save.
+- Proximity voice chat in multiplayer: push to talk, heard from where
+  the speaker stands, on servers that offer the Multiplayer voice mod
+  (which the packages ship). Linux, Windows and the PS5, where the
+  DualSense's microphone works and voices play on the TV or the
+  controller's speaker.
+- Reflections at the lower settings: a planar mirror on the wet streets
+  and local reflection probes around the camera, on in REMASTER MEDIUM.
+  Where reflections are traced, night puddles mirror the lit windows and
+  tremble with the rain.
+- Android: a gamepad plays the game, an AYN Odin's own controls or a
+  Bluetooth pad; the touch controls hide while it plays.
+- A small "Baking lighting" spinner at the top right while the lighting
+  bakes in the background during play.
+
+### Changed
+- The options are simpler: Display, Graphics and Gameplay show a row per
+  group (lighting, shadows, reflections, traffic, damage, assists, …),
+  each a preset that reads CUSTOM once you change one of its settings.
+  Every single setting is still there on the Advanced tab.
+- Strand hair: long hair stays out of the body (it lies on the shoulders
+  and moves aside for the arms and hands), holds still at rest, starts
+  at rest after a cut, and no longer curls in the rain. Without MSAA the
+  strands blend instead of speckling under FSR 3.1 or the TAA; with MSAA
+  fine hair no longer turns into a veil. Light scatters through long
+  hair, so it keeps a soft sheen in its depth. The simulation runs on the
+  graphics card.
+- Cut-scenes: the depth of field focuses on the speaker's eyes, a face in
+  close-up stays sharp with the street behind it soft, and the focus
+  moves to the next speaker as they begin. Rain drops on a windscreen
+  blur with the depth of field, and a car's cabin seen from inside stays
+  dry.
+- Faster: a performance pass over the simulation, the traffic, the
+  pedestrians and the renderer, with the same picture and the same game;
+  faster loading, and fewer stutters as people, cars and textures come
+  in. The PS5 title in particular is built and tuned for the console's
+  CPU.
+- The graphics benchmark asks before it applies what it suggests.
+- `menu_font` in settings.ron sets the menus in a font you have
+  installed, such as the original's Gill Sans.
+- The packages no longer ship Dawn.
+
+### Fixed
+- The aim assist locks onto police officers coming for you.
+- The Republic's restaurant no longer vanishes as the camera comes in
+  from the entrance hall or looks down in the bar.
+- A police car on your trail no longer appears inside a building (on
+  The Republic's first floor).
+- Stepping past the end of a wall in cover no longer counts as sneaking.
+- An oncoming car's headlamps no longer leave a white blob or cloud
+  down a wet street at night.
+- A new game starts the sky afresh: a second new game of the same
+  mission kept the last one's clock, and its rain came early.
+- No triangles in the faces' ambient occlusion with CACAO (the PS5's
+  settings).
+- In the opening cut-scene a lamp no longer lights Mark's car red from
+  inside: a cut-scene car takes the scene's lamps as in the original.
+- The player no longer gets stuck half way down some stairs.
+- The loading screen's count no longer jumps.
+
+### Mods
+- Mods can let the player ride along in their vehicles and let the
+  world's time pass at once (a taxi, a bus, a bed to sleep in), keep a
+  panel behind the others, set how much litter a tyre kicks up, and hear
+  when free roam starts.
+- London ground 0.9.0: thin autumn leaves on the road are kicked up far
+  less.
+- Tuning garage 0.2.2: a click beside an item no longer locks the
+  garage, and its car list offers only cars you can drive.
+- Strand hair: Yasmin long 1.0.1: her hair stays on her shoulders and
+  rises from the crown.
+- Update London ground, Tuning garage and Strand hair: Yasmin long from
+  the mods page.
+- New on the mods page: Faster cars (every car with 1.5 times the power
+  and 1.15 times the top speed, traffic and police included), Safe house
+  (Mark's flat in free roam: a crate that keeps your guns and a bed that
+  sleeps the clock forward and heals; needs Day cycle) and Open interiors
+  1.1.0 (Mark's flat to walk in).
+
 ## 0.2.0
 
 ### New
