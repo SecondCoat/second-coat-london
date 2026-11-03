@@ -38,7 +38,7 @@
   and local reflection probes around the camera, on in REMASTER MEDIUM.
   Where reflections are traced, night puddles mirror the lit windows and
   tremble with the rain.
-- Android: a gamepad plays the game, an AYN Odin's own controls or a
+- Android: a gamepad plays the game, a device's own controls or a
   Bluetooth pad; the touch controls hide while it plays.
 - A small "Baking lighting" spinner at the top right while the lighting
   bakes in the background during play.
@@ -60,11 +60,6 @@
   moves to the next speaker as they begin. Rain drops on a windscreen
   blur with the depth of field, and a car's cabin seen from inside stays
   dry.
-- Faster: a performance pass over the simulation, the traffic, the
-  pedestrians and the renderer, with the same picture and the same game;
-  faster loading, and fewer stutters as people, cars and textures come
-  in. The PS5 title in particular is built and tuned for the console's
-  CPU.
 - The graphics benchmark asks before it applies what it suggests.
 - `menu_font` in settings.ron sets the menus in a font you have
   installed, such as the original's Gill Sans.
@@ -87,6 +82,37 @@
   inside: a cut-scene car takes the scene's lamps as in the original.
 - The player no longer gets stuck half way down some stairs.
 - The loading screen's count no longer jumps.
+
+### Performance
+A measured pass over the whole game, every change keeping the picture
+and the game exactly as they were.
+- Loading: behind the loading screen the city is placed as fast as it
+  comes in instead of a piece a frame, textures are read in half the
+  time with half the memory, a pedestrian's far model shares its near
+  model's textures instead of loading its own, and the clouds' noise is
+  made in the background and kept for the next start. The shaders'
+  pipelines are built side by side, and with AMD's driver on Linux the
+  pipeline cache now finds them again at the next start.
+- Fewer stutters: pedestrians', enemies' and crowd figures' textures and
+  models come in on the loaders instead of the main thread, the drivable
+  cars are read once instead of at every swap, a mod car's normal maps
+  are not decoded again, and the combat sounds are prepared once.
+- The simulation: the traffic's drivers decide side by side on every
+  core, and a getaway driver plans its lines several times faster (it
+  cost up to 19 ms a frame on a PS5). The pedestrians, the enemies'
+  poses, the paths on foot, the collision lookups, the night's lights
+  and the lit windows, the feet on the ground and the strand hair all do
+  less work or share it over the cores. Mods' placed interiors (the
+  Underground) no longer cost up to 14 % of the main thread in free
+  roam.
+- The graphics: the skin's light scattering runs only with a face near
+  enough to show it, the city's plain walls lay their depth without a
+  shader, and the rain's drops, the TAA, the motion blur, the shadows, the
+  reflection probe and the rain on the lens are all cheaper. Fewer of
+  the GPU's waits between passes.
+- The PS5: the title is built with link-time optimisation for the
+  console's own CPU, and its memory comes from eight heaps so the
+  threads no longer wait on each other to allocate.
 
 ### Mods
 - Mods can let the player ride along in their vehicles and let the
