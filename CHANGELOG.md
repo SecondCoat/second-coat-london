@@ -1,5 +1,91 @@
 # Changelog
 
+## 0.3.1
+
+### New
+- The original's camera as an option: Locked camera (Off, Original) puts
+  the PS2's cameras in place of the free view, on foot holding its
+  bearing while you move and swinging behind you when you stop, at the
+  wheel with each car's own framing, the reverse and wall swings and the
+  cab views. Car camera (Close, Medium, Far, Original) sets how far the
+  chase camera hangs behind. The Gameplay preset's Original level sets
+  both, and both apply at once from the pause menu.
+- A First person switch on the Gameplay tab. In first person a car's
+  indicators show as two green arrows at the bottom of the screen and
+  blink the controller's light bar amber.
+- Options > Mods > Mod controls rebinds every mod's keys and pad
+  buttons, as the Controls tab does the game's.
+- The mods' windows are played with a pad: the d-pad moves through them,
+  LB and RB go from window to window, the right stick scrolls, B backs
+  out. A mod can give the pad a pointer of its own, and an on-screen
+  keyboard (the new Virtual keyboard mod) types with the pad.
+- The mod manager says when the texture cache lacks textures for the
+  mods you turned on, and prepares them there and then.
+
+### Changed
+- A failed mission's result stays on the screen for 4 seconds, long
+  enough to read why, before the mission starts again.
+- The city is silent under a cut-scene or a film: its police radio,
+  sirens and crashes no longer play through them.
+- Long hair hangs looser and falls over the shoulders: in the opening
+  cut-scene Yasmin's hair no longer turns with her head as one bundle.
+- A wiped windscreen beads up again as fast as the rain falls on it.
+
+### Fixed
+- The shoot-out with the Soho gang ends once they are down, and its
+  groups surrender: the mission never ended, however many of them died.
+- The Yardies can be killed: they kept the full health their paths gave
+  them.
+- The prison van in the escort mission no longer stops for the cars of
+  its own escort.
+- In the drug factory, the masked men stand on the lab's floor, in
+  sight: they stood on a hidden floor just above it and shot through
+  the walls, unseen. Feet no longer float there either, and after a
+  restart the lab is drawn instead of a grey box.
+- The car you tail through the city keeps left, overtakes only when the
+  other lane is clear, waits for the go on its handbrake (it reversed
+  across the police station's courtyard) and no longer gets stuck at the
+  lamp post under the arch or behind a closed road.
+- A mission's cars that follow a route brake before bends and get
+  unstuck.
+- The river under a bridge no longer flickers to the sky in the
+  reflections.
+- Upscaling the textures no longer fails on NVIDIA graphics cards.
+- The Windows package no longer needs the VC++ runtime installed.
+
+### Performance
+- Shoot-outs: the debris knocked off walls is simulated off the main
+  thread and over several cores, and a settled pile lies still until
+  something reaches it. Before, it could take most of the main thread.
+- Deep snow and the falling flakes are much cheaper to draw.
+
+### Mods
+- Mod API 0.92 to 0.99: messages between mods, map blips on the minimap
+  and the London map view, the player's outfits, dark rooms, muffled
+  sound indoors (where the rain and the night also stay out), the pad's
+  buttons in prompts and scripts, the pad's pointer, the on-screen
+  keyboard, and a hair style's front line.
+- Safe house 1.2.1: the flat furnished, with first-aid kits, a laptop to
+  order guns and kits, a wardrobe of outfits, a light switch, a house on
+  the maps and your last car parked at the door.
+- Open interiors 1.2.0, Minimap 1.3.0 and London map view 1.1.0 for the
+  above; Strand hair: Yasmin long 1.1.0 keeps her hair behind her
+  shoulders, in front only beside her face; Cheats 1.0.3 and
+  Multiplayer 1.2.4 use the touch pad only where the pad has one; Sky
+  race shows the pad's buttons.
+- Update them from the mods page.
+- New on the mods page:
+  - London life: buy the missions' buildings and Reggie's pub, keep a
+    stash in each, collect their daily takings, and shop on a 2002 web
+    from the laptop: an estate agent, a car dealer whose cars wait at
+    your door, an importer of guns, a bank and an evening paper. Needs
+    Economy and Safe house; free roam, offline.
+  - Economy: a wallet the other mods pay from and into, £2,500 to start
+    and a statement; online the server keeps it.
+  - Virtual keyboard: an on-screen keyboard to type with a pad, for
+    other mods' text fields such as London life's address bar. The PS5
+    title ships it.
+
 ## 0.3.0
 
 ### New
