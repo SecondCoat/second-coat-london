@@ -294,7 +294,7 @@ Apache License
 
 ========================================================================
 Apache License 2.0 (Apache-2.0)
-Used by: cpal 0.15.3, getaway 0.3.0+c95b785, self_cell 1.3.0, shaderc-sys 0.8.3
+Used by: cpal 0.15.3, getaway 0.3.1+13b455b, self_cell 1.3.0, shaderc-sys 0.8.3
 In: mobile/getaway-mobile/cpp/spirv-tools/LICENSE
 ========================================================================
 
@@ -936,7 +936,7 @@ Apache License
 
 ========================================================================
 Apache License 2.0 (Apache-2.0)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/vendor/vulkano-taskgraph/LICENSE-APACHE
 ========================================================================
 
@@ -2630,7 +2630,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ========================================================================
 BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
-Used by: getaway 0.3.0+c95b785, getaway-render 0.1.0
+Used by: getaway 0.3.1+13b455b, getaway-render 0.1.0
 In: crates/getaway-render/src/shaders/sgsr/LICENSE
 ========================================================================
 
@@ -5618,7 +5618,7 @@ THE SOFTWARE.
 
 ========================================================================
 MIT License (MIT)
-Used by: concurrent-slotmap 0.1.0-alpha.2, getaway 0.3.0+c95b785, slabbin 1.2.0, virtual-buffer 1.0.3, vulkano 0.35.2, vulkano-macros 0.35.0, vulkano-shaders 0.35.0, vulkano-taskgraph 0.35.1
+Used by: concurrent-slotmap 0.1.0-alpha.2, getaway 0.3.1+13b455b, slabbin 1.2.0, virtual-buffer 1.0.3, vulkano 0.35.2, vulkano-macros 0.35.0, vulkano-shaders 0.35.0, vulkano-taskgraph 0.35.1
 In: crates/vendor/vulkano-taskgraph/LICENSE-MIT
 ========================================================================
 
@@ -6273,7 +6273,7 @@ SOFTWARE.
 
 ========================================================================
 MIT License (MIT)
-Used by: ez-tree 0.1.0, getaway 0.3.0+c95b785
+Used by: ez-tree 0.1.0, getaway 0.3.1+13b455b
 In: crates/ez-tree/LICENSE
 ========================================================================
 
@@ -6647,7 +6647,7 @@ SOFTWARE.
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/include/FidelityFX/gpu/fsr1/CMakeCompileFSR1Shaders.txt
 ========================================================================
 
@@ -6704,7 +6704,7 @@ add_shader_output("${FSR1_PERMUTATION_OUTPUTS}")
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/include/FidelityFX/gpu/spd/CMakeCompileSPDShaders.txt
 ========================================================================
 
@@ -6759,7 +6759,7 @@ add_shader_output("${SPD_PERMUTATION_OUTPUTS}")
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/include/FidelityFX/gpu/fsr1/ffx_fsr1_resources.h
 ========================================================================
 
@@ -6805,7 +6805,7 @@ In: crates/getaway-fsr3/ffx/include/FidelityFX/gpu/fsr1/ffx_fsr1_resources.h
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/src/shared/ffx_breadcrumbs_list.cpp
 ========================================================================
 
@@ -6862,7 +6862,7 @@ void* ffxBreadcrumbsPopList(void* src, size_t newCount, size_t elementSize, FfxA
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/src/shared/ffx_object_management.cpp
 ========================================================================
 
@@ -6918,7 +6918,7 @@ void ffxSafeReleaseResource(FfxInterface* backendInterface, FfxResourceInternal 
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/src/backends/shared/blob_accessors/ffx_fsr3upscaler_shaderblobs.h
 ========================================================================
 
@@ -6970,7 +6970,7 @@ FfxErrorCode fsr3UpscalerIsWave64(uint32_t permutationOptions, bool& isWave64);
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/src/shared/ffx_object_management.h
 ========================================================================
 
@@ -7016,7 +7016,7 @@ FFX_API void ffxSafeReleaseResource(FfxInterface* backendInterface, FfxResourceI
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/src/backends/shared/ffx_shader_blobs.h
 ========================================================================
 
@@ -7070,7 +7070,7 @@ FfxErrorCode ffxIsWave64(FfxEffect effectId, uint32_t permutationOptions, bool& 
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: crates/getaway-fsr3/ffx/include/FidelityFX/gpu/ffx_core_portability.h
 ========================================================================
 
@@ -7124,7 +7124,7 @@ void ffxOpARcpF3(FFX_PARAMETER_OUT FfxFloat32x3 d, FfxFloat32x3 a)
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785, getaway-texgpu 0.1.0
+Used by: getaway 0.3.1+13b455b, getaway-texgpu 0.1.0
 In: crates/getaway-texgpu/shader/LICENSE
 ========================================================================
 
@@ -7148,7 +7148,7 @@ SOFTWARE.
 
 ========================================================================
 MIT License (MIT)
-Used by: getaway 0.3.0+c95b785, getaway-fsr3 0.1.0
+Used by: getaway 0.3.1+13b455b, getaway-fsr3 0.1.0
 In: crates/getaway-fsr3/ffx/LICENSE.txt
 ========================================================================
 
@@ -11104,7 +11104,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ========================================================================
 SIL Open Font License 1.1 (OFL-1.1)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: assets/ui/fonts/Cabin-OFL.txt
 ========================================================================
 
@@ -11205,7 +11205,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ========================================================================
 SIL Open Font License 1.1 (OFL-1.1)
-Used by: getaway 0.3.0+c95b785
+Used by: getaway 0.3.1+13b455b
 In: mods/london-mapview/OFL.txt
 ========================================================================
 
