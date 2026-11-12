@@ -7,6 +7,8 @@ multiplayer.
 
 **Download and setup: [secondcoat.dev/the-getaway-remaster/download](https://secondcoat.dev/the-getaway-remaster/download/)**
 
+<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
+
 This repository holds the [releases](https://github.com/SecondCoat/second-coat-london/releases):
 each version's builds, the same files as on the download page. Each desktop
 platform has two packages, the game alone and a full one (`-materials`) with
