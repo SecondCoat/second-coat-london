@@ -1,5 +1,192 @@
 # Changelog
 
+## 0.4.0
+
+### New
+- Black Monday, the sequel, plays in the remaster from your own disc
+  (NTSC-U SCUS-97408). It is an early preview: much of it has not been
+  played through yet and its story missions are still being built, so
+  expect missions that do not finish and things that are missing. What
+  is there:
+  - A switch at the top of the main menu picks The Getaway or Black
+    Monday. Each game has its own disc page (`bm_iso_path` in
+    settings.ron), intro movie, saves, free roam, chapter select and
+    credits; switching leaves nothing of the other game behind.
+  - Free roam in its London as Mitch, under its own sky, with its
+    traffic, parked cars, pedestrians, police and gangs, its lamps and
+    flares at night, and its own sounds, engines, music, speech, street
+    ambience and room echo. Get into its cars, carjack their drivers,
+    and ride its motorbikes: they lean into bends, brake with ABS and
+    lift a wheel on the rider's weight (Sprint and Crouch).
+  - Its movies (the intro behind the menu, the making-of, the credits)
+    and its cut-scenes, with their cast, cars, guns, weather, lighting,
+    gunshots, smoke and subtitles.
+  - New Game and Chapter Select walk its story, with its branches,
+    checkpoints and saves during a mission. Mitch arrests and cuffs (the
+    gangs surrender to him), throws tear gas and swaps his guns; Eddie
+    holds a man in a grapple with blows, throws and knock-outs and
+    shoulders doors open; Sam creeps unheard, crawls through low spaces
+    and opens a door a crack from cover. Doors swing, the dead can be
+    dragged, a car hands you the gun it carries, and the extras are
+    there: races, black-cab shifts and timed chases.
+  - Mods say which game they are for; those made for Black Monday load
+    under it. Its textures can be upscaled into a mod of their own.
+- The HD textures and the Generated materials are downloads on the mods
+  page, locked to the disc: the mod manager (and the PS5 launcher)
+  unlocks them with your own disc image as it installs them, so you no
+  longer need to upscale on your own graphics card. Tools > Upscale the
+  textures… still makes them yourself.
+- In first person at the wheel: dials behind it (speed, revs, fuel,
+  temperature, tell-tales), a gear lever, handbrake, pedals and a
+  rear-view mirror; the hands hold the rim at ten to two and go hand
+  over hand as it turns with the car's steering. The side mirrors sit
+  in their housing, and the rain stays out of the cabin.
+- Window recesses: the facades' windows sit in their walls, with a
+  reveal around the glass and their reflection in the recess (on above
+  ORIGINAL in the Reflections preset).
+- Bullet impacts as the disc plays them: holes only where it keeps
+  them, dust, debris and glow by the surface hit, splinters off crates,
+  leaking water, and a shot fire extinguisher bursting in a cloud that
+  makes those in it cough. A smoking car makes those in it cough too,
+  and a seat in a car that burns long catches fire. Advanced > Damage
+  and physics > Impact craters everywhere (off) adds a crater where the
+  disc leaves no hole.
+- The European disc (PAL SCES-51159, v2.03 and v3.00) plays. The early
+  v1.03 is recognised but not played.
+- With Black Monday's disc set up as well, The Getaway's rain is heard:
+  Black Monday's rain in the open and on the roof under cover (Options >
+  Audio > Rain sound).
+- RecompLauncher support in the Linux and Windows packages, and
+  `--game <path>` to name the disc image for one run.
+
+### Changed
+- One release package per platform: the "-materials" packages are
+  gone. London ground and the MakeHuman characters, which they carried,
+  are downloads on the mods page like any other mod.
+- Cars: a physical clear coat on crowned panels and curved glass, so
+  reflections bend over them as on a real car; flakes that glint in the
+  sun; road film low on the body by how dirty the car is; the High sky
+  and its clouds in the traced reflections, and no more white patches
+  from fill lamps. The road is shaded under a car and its wheel arches.
+- The High rain: short streaks that lean with the camera's motion and no
+  longer brighten what is behind them; drops running down a car leave a
+  thin line of water that breaks into beads; splashes are a spray with a
+  ring and some mist; your own headlamps no longer light one band of
+  rain; beads on the glass glitter less and stay round. Rain and snow
+  veil the High sky in the distance too.
+- The High exhaust is a trail of puffs that follows the pedal.
+- Blood on a car runs down in rivulets that halt and let go in their
+  own time, instead of sliding off as one piece.
+- The wipers are fitted to each windscreen, so the glass in front of
+  the driver is wiped, and the blades are longer on a tall screen.
+- The tuned police no longer put a car on your trail just behind you
+  once you have lost them; there are more patrols in the traffic
+  instead (two when calm, up to four as the heat rises).
+- Fewer false windows: shutters, doors and bricked-up or boarded
+  windows no longer shine as glass.
+- Mods load after the mods they need, whatever their order in
+  settings.ron: the order no longer turns a mod off.
+- The mod manager makes a mod of GTA V cars from any download, under a
+  name of your own: it finds the models, handling and credits itself.
+
+### Fixed
+- The game starts on Macs: it stopped with a fatal error after the
+  splash.
+- No crash on Windows from a pad that connects as the game starts.
+- The upscaled textures and generated materials no longer show lines
+  between street textures (upscale again, or download them).
+- Strand hair no longer turns into a veil at a low resolution, such as
+  under FSR 3.1 Performance.
+- Facade windows no longer flicker, and a glass facade no longer shows
+  a line where its near and far reflections meet.
+- A gang car its crew left is an empty car to take, not a carjacking.
+- Mark and Frank each say their own lines when they crash or are hurt.
+- The driver's side mirror shows what a driver sets it to, and the
+  Voyager has its windscreen and roof from the driver's seat.
+- A mod car's headlamps no longer leave dark wedges on the road, and
+  its light bar lights from the bar, not from inside the cabin.
+- Mods' markers in a colour no marker used before are drawn.
+- A server's mods are put in place with their own progress (on the PS5
+  they stood at 100 % for minutes).
+
+### Performance
+Faster starts and fewer waits.
+- The lighting's shaders are much smaller and partly built in the
+  background while the world loads: on a first start the renderer is
+  ready in well under half the time.
+- A game starts behind the loading screen, which says what it is doing:
+  the player loads on a thread of his own, and the main menu prepares
+  Mark and a new game's first cut-scene (on the PS5 New Game froze for
+  up to 49 seconds).
+- Reflections on the walls, the wet streets and the cars are traced
+  once per pixel in a pass of their own.
+
+### Multiplayer
+- Players' cars collide once and drive on: a crash no longer pushed
+  both cars twice, a touched car no longer stopped for a second and then
+  slid, and the traffic lights run on one clock for everyone.
+- MULTIPLAYER under FREE ROAM on the main menu joins or hosts.
+- Going back to the main menu ends the session: the next game no longer
+  ran online.
+- Voice chat's microphone works on the PS5 (it only listened before).
+- On the official server you come back where you left. A server knows
+  you again by a key your game keeps, and server mods can give a player
+  doors of their own, park cars for players, run the police and put
+  fighters in the world.
+
+### PS5
+- The launcher's first start is a set-up: the disc image, the
+  recommended mods, preparing the game, then Play. The disc image comes
+  from a browser on your computer (an address and a QR code) or from
+  the PS2 disc in the console's drive, in about twenty minutes.
+- The launcher plays and upscales either game, unlocks the locked mods
+  with your disc image, installs packages copied to its packages folder
+  and the recommended mods in one go, and marks the tiles that need you.
+- The console's keyboard types into the game's text fields; the title
+  no longer ships the Virtual keyboard or the Generated materials.
+- Large files no longer slow to a crawl as they are written, the
+  launcher's words fit their room, and the mods' windows show the pad's
+  focus.
+
+### Mods
+- Mod API 0.100 to 0.110: the police's heat, crimes, dispatched cars and
+  whereabouts; armed characters on your side, against you or neutral,
+  who can ride in your car; vehicles that make room among the parked
+  cars; lit lamp lenses and flashing lights on mod cars; which game a
+  mod is for; rows in the main menu; mods locked to the disc; and the
+  rounds a player keeps.
+- London life 1.7.0: jobs in free roam from a firm's counter, paid into
+  your wallet: black-cab fares, Royal Mail rounds, haulage, trade plates
+  at Park Lane Motors, cars stolen to order for a fence at Surrey Docks,
+  a chauffeur at the Cumberland Hotel, the car pound and repossessions,
+  package runs, getaways with a crew (the alarm brings the police) and
+  McCormack's protection round. Fares, guests and the crew's man ride
+  along. A 2002 phone (d-pad up) brings messages, the firms' numbers, a
+  minicab, your bank balance and a route to a firm's door. The dealer
+  sells the Beta cars' new models.
+- Beta cars 1.1.0: five more of the disc's unused cars on the road, a
+  BMW 3 boy-racer, a Skoda, a Ford Cortina, a Granada estate and an
+  Aston Martin V8.
+- Car pack 0.2.0 and Car pack (2002) 0.2.0: the lamps' lenses light up
+  (headlamps, brake lamps, indicators, reversing lamps, the Met
+  Transit's flashing lights), and eleven cars have their windscreens
+  back, with rain, blood and wipers.
+- HD textures 2.0.0 and Generated materials 2.0.0: our own upscale of
+  the disc's textures and the maps made from it, locked to your disc
+  (see above). Install them with the mod manager's Install mod… or the
+  PS5 launcher's Mods page.
+- Minimap 1.4.0: the police on the map, cars as arrows and officers as
+  dots, red while they chase (its "The police" setting).
+- Multiplayer 1.3.0: MULTIPLAYER on the main menu.
+- Character creator 0.3.4, London map view 1.1.1, Sky race 1.2.2 and
+  Tuning garage 0.2.3 play with a pad, their prompts naming its
+  buttons; the creator opens with d-pad down, shows which button the pad
+  is on, and builds what you choose again.
+- Update them from the mods page.
+- New on the mods page:
+  - Pigeons: flocks of pigeons about the city that peck, walk, take
+    fright when you come close, fly a round and land again.
+
 ## 0.3.1
 
 ### New
