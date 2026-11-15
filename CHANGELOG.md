@@ -1,5 +1,88 @@
 # Changelog
 
+## 0.4.1
+
+### New
+- Assetto Corsa cars and tracks from your own copy of that game, made
+  into mods by the mod manager:
+  - Tools > Assetto Corsa cars… makes a car you can drive, with its own
+    cabin in first person (its dials' needles turn), its skins' colours
+    as paints, its handling from its data, its own wipers, lamps that
+    light and bodywork that dents. A model without doors of its own has
+    its front doors cut out of the body.
+  - Tools > Assetto Corsa races… puts a track in a mod of races; K in
+    the game lists them. A track is hung over your car and timed from
+    line to line, with its grass, water, lamps and smoke.
+- A crash handler beside the game: when the game stops without warning,
+  also before the menu or with a lost graphics device, a message box
+  asks whether to send the report. A lost graphics device's report
+  carries what the driver says went wrong.
+- Mirrors: the door mirrors and the rear-view mirror are convex,
+  silvered behind their glass and a little dusty, and show a mirror's
+  view from the driver's seat.
+- The Windows programs carry their version, an icon and a manifest.
+
+### Changed
+- First person at the wheel: the hands hold the rim from outside and
+  feed the wheel through, a MakeHuman figure's fingers bend at their
+  joints, the cabin is drawn brighter, and a mod car's dials light with
+  its lamps.
+- Lamps at night: a lamp's glow spreads as a glare does, with a hot core
+  and fine rays round it, and a headlamp's glow sits in its beam. Rear
+  lamps and indicators shine away from the car, so brake and reversing
+  lamps no longer light its own cabin. A dented car's lamps move with
+  its bodywork.
+- Wipers: a blade leaves a smear that dries behind it, and the beads
+  grow back from specks instead of popping back at full size. A mod
+  car's own wipers take the place of the game's blades.
+- A mod's vehicle is placed beside other cars: only a car in its spot
+  refuses it, not any car within 12 m, which made the cheat menu's spawn
+  fail again and again in traffic. A car that cannot be spawned says
+  why.
+
+### Fixed
+- A light that moves, such as a car's headlamps, keeps its shadows
+  instead of dropping them until its turn came, and a car no longer
+  casts a shadow into its own beam.
+- GTA V cars made into mods dent the right way round and as an ordinary
+  car whatever their weight.
+- A car with wipers of its own shows its dents and opens its doors.
+- No error from the graphics driver's checks on presenting a frame or
+  on a fire seen in the traced reflections.
+
+### Performance
+A second measured pass, every change keeping the picture and the game
+as they were.
+- Starting: the shaders' cache is written only when it changed and off
+  the main thread (five of a start's eight writes of 160 MB were not
+  needed), and the start goes on the moment the lighting's shaders are
+  built.
+- The graphics: grass, leaves and trees are cheaper to draw, the city's
+  walls are tested for the view over several cores, as is what hides
+  what, the strand hair's resolve skips pixels without hair, and a
+  lamp's shadow map is kept while nothing in it moves.
+- The simulation: fewer copies and lists made every frame for the
+  player, the pedestrians, the ragdolls and the traffic's contacts; dry
+  streets and scenes without strand hair no longer wake the worker
+  threads for nothing.
+- London map view's script takes a quarter of its time per frame.
+
+### Mods
+- Mod API 0.111 to 0.117: a car with a cabin of its own (its dials,
+  lever, pedals and rear-view mirror), its own wipers and cabin lights;
+  the pad's button symbols in a mod's text; an event when a placement is
+  placed, a placement's grass, rain and water by its materials, and
+  smoke in the world.
+- Tuning garage 0.2.5: its menu plays with a pad: B goes back and drives
+  out, the right stick turns the camera round the car, the triggers
+  bring it closer and farther.
+- Tuning garage, London map view 1.1.3, Sky race 1.2.3, Multiplayer
+  1.3.1, London life 1.7.1 and Virtual keyboard 1.1.1 draw the pad's
+  buttons as symbols in their prompts and hints.
+- Car pack 0.2.1 and Car pack (2002) 0.2.1: the cars dent the right way
+  round.
+- Update them from the mods page.
+
 ## 0.4.0
 
 ### New
