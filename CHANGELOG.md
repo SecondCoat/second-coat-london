@@ -1,5 +1,87 @@
 # Changelog
 
+## 0.4.2
+
+### New
+- Online, other players wear their own figures: a character made with
+  the MakeHuman characters mod is what everyone else sees, the cast's
+  model until it is built.
+- A server joined from the main menu is asked for its mods there: one
+  join view in four steps (connect, mods, download, enter) with the
+  server's mods as a table and the download's speed and time left, and
+  the game loads once, straight into the server.
+- Emergency vehicles in the traffic: a car on a call drives faster, the
+  cars on its way pull over, it goes by them on their other side and
+  crosses a red light at a crawl once nothing crosses, on its lights
+  and siren.
+- "Present timing" under the advanced window options, applied at the
+  next start. It is on by default on Linux alone.
+
+### Changed
+- Online the sky and the weather are the server's: the same sky and
+  rain for everyone, whatever each player's own time of day and rain
+  settings, and a player who joins in the rain finds soaked streets.
+- The rain's haze by day is lit by the overcast, so the end of a street
+  and the skyline no longer turn white.
+- Joining a server no longer prints lines of mod names in the chat.
+
+### Fixed
+- The lost graphics device of 0.4.1 on NVIDIA cards under Windows
+  (drivers 610 and newer) once it rains.
+- A lost graphics device in the rain with FSR 3.1, at the moment the
+  first drops reach the lens.
+- Present timing is off by default on Windows, where a start could die
+  in the graphics driver right after the splash.
+- Memory the graphics card was still reading is kept until its frame is
+  done; a busy frame could hand it out again.
+- A shader's loop can no longer run without end on a count that was
+  never written.
+- A crash when a vehicle narrower than 0.6 m caught fire.
+- The cut-scenes' cast no longer looks cross-eyed.
+- No faint dashed line across the night sky, far from the moon.
+- No seam in a glossy road's highlights over a rise under a low sun.
+- A mod's panel with a width wraps its text at that width, not at the
+  width of its first line (the chat's lines broke a word a row).
+- A mod's placed interior takes the disc's objects that stand in its
+  doorway or its walls out of the way.
+
+### Multiplayer
+- A server sets how much traffic it keeps (`--traffic`) and the damage
+  every player's cars take (`--damage`); `TRAFFIC` and `DAMAGE` in the
+  Docker server's settings.
+- Server mods can name where a player lives again after a death, hear
+  every death, lay the street's dead on a model and carry them, send a
+  vehicle on an emergency call, seat people through a car's doors and
+  set the snow. Two examples: a hospital (a player who died comes back
+  at the nearest hospital's door) and ambulances.
+
+### Mods
+- Mod API 0.119 to 0.126: a shield for the player's car; a server's
+  mods asked for from a mod's menu page; the pad's button symbols in a
+  script's lines; every death as an event, the street's dead and
+  emergency calls; people out of and into a mod's vehicle through its
+  doors; the player as anyone of the cast; glass in a placement's
+  model; a normal map on a plugin's figure; 128 blips a mod.
+- Multiplayer 1.4.1: the new join view, server cards that show how
+  full they are, a line at the top while a join is under way and a
+  notice when it failed.
+- MakeHuman characters 0.3.0: the clothes' normal maps and baked
+  ambient occlusion, a smoother body and clothes on the player, and the
+  police and others in a uniform keep the cast's model. Other players
+  see your character online.
+- Sky race 1.2.7: the car takes no damage from the pick until the race
+  is left, nobody is left up on a course (whoever falls off is put back
+  at the last checkpoint, on foot too), and the prompts show the pad's
+  button symbols.
+- Tuning garage 0.2.6: the sky race is off while the garage has the
+  car.
+- London life 1.8.0: the postman's depot is a Royal Mail delivery
+  office, a sorting hall with a van bay behind a brick front.
+- Seasons 1.2.1: single player only (online the weather is the
+  server's), and less snow in winter, mostly light falls.
+- Character creator 0.3.5: another mod can open it.
+- Update them from the mods page.
+
 ## 0.4.1
 
 ### New
