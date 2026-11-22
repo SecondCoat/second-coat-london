@@ -1,5 +1,191 @@
 # Changelog
 
+## 0.5.0
+
+### New
+- The first start asks how you want to play: the remaster's graphics
+  or the original's, the remaster's gameplay or the original's, and a
+  free or a locked camera, each with a picture of what it gives.
+- Street life: with the remaster's pedestrians, in free roam, people
+  are about something. They sit on London's benches and on the rims of
+  Trafalgar Square's fountains, stroll over its squares, wait under the
+  bus shelters, stop at shop fronts, run errands and talk to each other
+  in London voices. They look about as they go: at whom they talk to, a
+  car going by, somebody coming the other way, you. Online too.
+- London's monuments: the fountains of Trafalgar Square, the Victoria
+  Memorial and Hyde Park run with water, their basins filled, with
+  their sound near by and lamps under the water at night. The packages
+  ship it, turned on.
+- The London Underground: real stations under the streets, dressed in a
+  kit of our own: tiled halls and platforms, posters, lit train
+  indicators with the next trains, trains with cabs whose doors open,
+  people who wait, get on, sit and get off. The trains and platforms are
+  heard as in 2002: where the train goes, the next station, "mind the
+  gap", the doors. The packages ship it, turned on.
+- FPS mode: in the first person on foot the drawn gun is held in view
+  by your own arms, raised to the eye to aim, lowered to sprint; a long
+  gun's butt in the shoulder, the SMG and the sawn-off low in both
+  hands.
+- First person in the car only: the seat's view when you drive, the
+  camera over the shoulder on foot.
+- Combat: every shot kicks the gun and the aim and they come back, and
+  Aim locks on to the next target as in the original (on a pad). The
+  crosshair opens with the shots' spread and the kick; a dot alone is a
+  choice on the Gameplay tab.
+- A car's spray in the rain: the tyres throw droplets and a fine mist
+  lit by the lamps, red behind the tail lamps, white in a following
+  car's beam.
+- Rain rings on the Thames and on open water.
+- Indoors, the world outside is muffled the deeper you go, and the rain
+  is not heard.
+- The London map: with a pad the map's centre is the cursor, and R1 sets
+  the waypoint there.
+- Cheats: Repair my car makes your car as new.
+
+### Changed
+- Strand hair is groomed: each character's hair is the groom made on
+  their own head, up to 160 000 strands, drawn and lit as fibres,
+  shadowed through itself and moving with the body, and the nearest
+  pedestrians wear theirs, body hair too, in natural colours, the scalp
+  painted under them. The grooms come with the Strand hair mods; the
+  hair the game grew itself is gone.
+- The grass is a mown lawn of real grass sprigs, thinner under trees
+  and worn along walls and kerbs.
+- The parks have their ground: Hyde Park's, Green Park's and St James's
+  lawns and the gardens behind the tree walls are grass with trees on
+  it, where the sky showed between the trunks.
+- The trees are shaded as a crown: darker deep inside, lit through at
+  their edges.
+- The streets' facades are dressed with downpipes, cameras, lamps and
+  cabinets, the open streets too, not the alleys alone.
+- The weather keeps to the sky: the clouds and the wet streets come and
+  go with the rain, so the dry, sunny hours are back.
+- At dusk the sun sets below the horizon and the moon takes over in the
+  dark, where the light stopped at six and came back up.
+- The wet streets glint on the asphalt alone, in finer points near by,
+  not over smooth paving like noise.
+- At night a face lit by a lamp keeps its colour, and the lamps' light
+  off the ground reaches the figures: no grey metal faces in the dark.
+- A strike plays its own animation at its own speed and lands when the
+  blow does. A policeman's truncheon reaches you instead of striking
+  the air beside you.
+- Knocked-over objects are heavier, never left hanging in the air, and
+  knock people down.
+- The remaster's pedestrians notice a car late, as people do, and leap
+  out of its way with the animation.
+- Reflections on windows, the river and the puddles hold still, and
+  windows reflect further, the one behind a car's glass too.
+- In a jam a car honks once and shouts once, as in the original, not
+  every few seconds.
+- Less dust from a crash or a shot.
+- The cut-scenes' cast no longer squints.
+- Under the original's gameplay your steps fall with your feet.
+- Settings: Tuned is now called Remaster.
+
+### Fixed
+- Dotted lines of sky down facades and across the streets: the cracks
+  between the world's pieces are closed.
+- Facades that flickered in and out beside some roads.
+- A crash after a minute or two of play on Intel graphics under
+  Windows ("you must wait on the current flight frame before
+  acquiring").
+- A start that died on some Windows PCs as the window was made again
+  after the splash.
+- Present timing is really off on Windows: a first start turned it on.
+- A crash on Windows that is no panic is logged, with where it
+  happened.
+- With FSR 3.1 chosen on a GPU that cannot run it, the picture is
+  upscaled the simple way instead of not at all.
+- On Android a second launch no longer quits the running game, and
+  some phones draw the world in the rain again. On a phone a menu tap
+  that resumes the game no longer leaves Fire held.
+- On the PS5 textures are converted on the GPU, the strand hair is off
+  by default, and the title keeps within its memory.
+- FSR 3.1's history no longer flickers from a pass that wrote it in the
+  wrong format.
+- In a cut-scene the cast is no longer coloured by the room's lamps,
+  which the original never lit them with (Frank went blue-violet in
+  one).
+- A pad without a known mapping has its triggers.
+- A kerb made of one long sloping face is stepped onto.
+- Getting into a car no longer leaves you stuck holding a body that does
+  not come out.
+- At Low damage a single crash no longer makes the engine steam.
+- In the tailing missions the lights ahead are held only close to the
+  car you follow, not three junctions on.
+- A guard without a patrol no longer stands still at a junction.
+- A row of benches stands on its sloping pavement, not in it or over
+  it.
+- A lamp's own post no longer casts a black square round its foot.
+- Towers that stood across a road are drawn only where their street is
+  seen.
+- Some traffic lights had no glow at night; every light glows.
+- Some cars' brake lamps lit white with the headlamps.
+- A long gun stays in the gun hand during a carjack.
+- Online, a server no longer stands still when bodies fall in two
+  places at once.
+
+### Performance
+A third measured pass, every change keeping the picture and the game
+as they were.
+- The graphics: trees behind buildings are not drawn, the world's
+  depth is laid before its colour, the static world, the figures'
+  bones, the occlusion test, the shadow casters and the local lights
+  do less work every frame, glass is left out of the opaque pass, an
+  interior casts no sun shadow, and the lit shaders are optimized on
+  every platform, not on Windows alone.
+- Cars: their shadows in the lamps' light are cast from a coarse model,
+  the traffic's beams within a budget, and a crash in a detailed car no
+  longer stalls the frame.
+- The simulation and the mods: the traffic, the pedestrians, the
+  placements and the mods' passes keep their work between frames; the
+  mods' models load a few at a time and keep less in memory; free
+  roam's save is written beside the game.
+- The packages' assets are compressed archives, read in place.
+
+### Multiplayer
+- London life online: the gun you carry is yours again when you come
+  back to the server, unless you died with it.
+- The other players' pedestrians sit, talk and look about as yours do.
+- A mod's gun can sound otherwise when somebody else fires it.
+
+### Mods
+- Mod API 0.127 to 0.142: a mod's people follow another or the player,
+  take the street's pedestrians and seat them, and crowds on a square;
+  a moving placement carries people; fountains, still water in a
+  placement and the disc's effects hidden round a place; facades on the
+  open streets; the lawn and a fifth texture in a surface shader; a
+  car's lit screens, its mirrors' glass and outline; a gun's shot when
+  others fire it; grooms for strand hair; a mod's folders as compressed
+  archives, and a locked mod's as encrypted ones that unlock in a few
+  large writes. The mods' scripts have twice the time they had.
+- The mod manager imports Call of Duty 4's guns from your own install.
+- Cars converted from Assetto Corsa: their own handling, engine sounds
+  inside and out, played as the car's sound bank plays them and as loud
+  as the disc's cars, gears, backfires, skid, wind and doors; a model
+  detail level, up to the model as its maker made it; its original and
+  districts picked from lists; door mirrors from the car's own
+  settings; a download without its textures is refused. A car added to
+  the traffic no longer empties the streets.
+- Cheats 1.1.0: Repair my car.
+- London ground 0.14.0: the open streets' facades dressed, fewer
+  air-conditioning units, no grass of its own on the lawn, and much
+  cheaper to draw.
+- A mod's window shortcuts hear their pad buttons too.
+- London map view 1.2.0: the pad's cursor. Minimap 1.4.1: cheaper.
+  Open interiors 1.2.1: Mark's flat's wall in free roam alone, not in
+  the story's cut-scenes.
+- Strand hair 2.0.0, Strand hair: pedestrians 2.0.0 and Strand hair:
+  Yasmin long 2.1.0: the grooms, made on each character's head.
+- The London Underground shows no captions of the announcements.
+- Update them from the mods page.
+- New on the mods page:
+  - London's monuments and the London Underground, as the packages
+    ship them.
+  - Pedestrian dogs: some of the people on the pavements are out with a
+    dog, a labrador or a puppy, and passers-by stop for a word about it.
+    Free roam.
+
 ## 0.4.2
 
 ### New
