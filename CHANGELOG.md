@@ -178,6 +178,9 @@ as they were.
 - Strand hair 2.0.0, Strand hair: pedestrians 2.0.0 and Strand hair:
   Yasmin long 2.1.0: the grooms, made on each character's head.
 - The London Underground shows no captions of the announcements.
+- HD textures and Generated materials 2.0.1: the same as 2.0.0, as a few
+  compressed archives your disc unlocks, so they install much faster.
+  No need to update from 2.0.0.
 - Update them from the mods page.
 - New on the mods page:
   - London's monuments and the London Underground, as the packages
